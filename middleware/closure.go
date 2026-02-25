@@ -1,21 +1,22 @@
 package main
 
-// import (
-// 	"fmt"
-// )
+import (
+	"fmt"
+)
 
-// func main() {
-// 	numGenerator := generator()
-// 	for i := 0; i < 5; i++ {
-// 		fmt.Print(numGenerator(), "\t")
+func main() {
+	numGenerator := generator()
+	for i := 0; i < 5; i++ {
+		fmt.Print(numGenerator(), "\t")
 
-// 	}
-// }
+	}
+}
 
-// func generator() func() int {
-// 	var i = 0
-// 	return func() int {
-// 		i++
-// 		return i
-// 	}
-// }
+func generator() func() int {
+	var i = 0
+	return func() int {
+		i++
+		return i
+	}
+}
+
